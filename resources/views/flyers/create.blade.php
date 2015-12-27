@@ -6,10 +6,8 @@
 
 	<hr/>
 
-	<form action="/flyers" method="POST" enctype="multipart/form-data" class="col-sm-6">
+	<form action="/flyers" method="POST" enctype="multipart/form-data">
 		@include('flyers.form')	
-
-
 
 		 @if (count($errors) > 0)
 		 	<div class="alert alert-danger">
@@ -20,6 +18,5 @@
 		 		</ul>
 		 	</div>
 		 @endif 
-		
 	</form>
 @stop
