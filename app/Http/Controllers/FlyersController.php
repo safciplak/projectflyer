@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 
+
 use Symfony\Component\HttpFoundation\File\UploadedFile;
 use Illuminate\Http\Request;
 use Illuminate\Support\MessageBag;
@@ -17,6 +18,7 @@ class FlyersController extends Controller
     public function __construct()
     {
         $this->middleware('auth', ['except' => ['show']]);
+        parent::__construct();
     }
 
 	public function index()
